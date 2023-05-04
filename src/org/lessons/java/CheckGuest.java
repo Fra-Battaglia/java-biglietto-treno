@@ -25,8 +25,25 @@ public class CheckGuest {
 		name = in.nextLine();
 		in.close();
 		
-		for (int i = 0; i < Guests.length; i++) {
-			if (name.equals(Guests[i])) {
+//		// CICLO FOR
+//		
+//		for (int i = 0; i < Guests.length; i++) {
+//			if (name.equals(Guests[i])) {
+//				System.out.println("Entra pure!");
+//				
+//				return;
+//			}
+//		}
+//		
+//		System.out.println("Non puoi entrare!");
+		
+		// CICLO WHILE
+		
+		int i = 0;
+		while (i < Guests.length) {
+			String Guest = Guests[i++];
+			
+			if (name.equals(Guest)) {
 				System.out.println("Entra pure!");
 				
 				return;
