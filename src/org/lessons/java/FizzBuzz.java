@@ -1,8 +1,17 @@
 package org.lessons.java;
 
+import java.util.Scanner;
+
 public class FizzBuzz {
 	public static void main(String[] args) {
-		for (int i = 0; i < 100; i++) {
+		
+		Scanner in = new Scanner(System.in);
+		int tot;
+		
+		System.out.println("Con quanti numeri vuoi giocare a FizzBuzz?");
+		tot = in.nextInt();
+		
+		for (int i = 0; i < tot; i++) {
 			int num = i + 1;
 			
 			// FizzBuzz
@@ -22,5 +31,7 @@ public class FizzBuzz {
 				System.out.println(i + 1);
 			}
 		}
+		
+		in.close();
 	}
 }
